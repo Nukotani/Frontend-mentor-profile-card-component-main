@@ -1,0 +1,88 @@
+* {
+    color:hsl(227, 10%, 46%);
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-position: -350px -500px , 600px 320px;
+    background-color: hsl(185, 75%, 39%);
+    text-align: center;
+}
+
+[class|="bg"] {
+    width: 1000px;
+    position: relative;
+    object-fit: cover;
+}
+.bg-1 {
+    top: -560px;
+    left: -570px;
+}
+.bg-2 {
+    bottom: 700px;
+    right: -400px;
+}
+
+.card {
+    position: relative;
+    display: block;
+    margin: 150px auto 0 auto;
+    z-index: 2;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background-image: url("images/bg-pattern-card.svg");
+    overflow: hidden;
+    text-align: center;
+}
+.pfp {
+    border-radius: 100%;
+    border: 5px solid white;
+    position: absolute;
+    top: 22%;
+    left: 34%;
+}
+.card .card-header {
+    height: 130px;
+}
+.card .content {
+    background-color: white;
+    height: 250px;
+}
+.content-header {
+    padding: 60px 0 10px 0;
+    line-height: 25px;
+}
+.content-header span {
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+footer {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    justify-content: space-evenly;
+}
+footer div {
+    text-align: center;
+}
+footer div p {
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 20px;
+}
+footer div span {
+    letter-spacing: normal;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+ 
+@media only screen and (max-width: 500px) {
+    body {
+        background-position: -700px -600px, 100px 350px;
+    }
+}
